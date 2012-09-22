@@ -20,8 +20,20 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
+group :development do
+  gem 'rb-inotify'
+  gem 'rails_best_practices'
+  gem 'guard-rails'
+  gem 'guard-rspec'
+  gem 'guard-rake'
+  gem 'guard-bundler'
+  gem 'guard-rails_best_practices'
+  gem 'guard-cucumber'
+end
+
 group :test do
   gem 'therubyracer'
+  gem 'simplecov'
   gem 'rspec-rails'
   gem 'cucumber-rails'
   gem 'database_cleaner'
